@@ -13,13 +13,13 @@ body{font-family: 'Roboto', sans-serif; margin: 0;}
 a:visited{color: black}
 h2{padding: 30px 0 0 20px; font-weight: 500;}
 h3{margin: 0;}
-h4{padding-left: 20px; font-weight: 400;}
 p{margin: 5px 0 0 0;}
-footer{background-color: #353535; color: white; height: 150px;}
+footer{background-color: #353535; color: white; height: 170px;}
 i{margin: 0 20px 0 20px;}
 img{width: 100%; height: 275px; object-fit: cover;}
 
 .police_title{font-family: 'Shrikhand', cursive;}
+.title_menu{padding-left: 20px; font-weight: 400;}
 .menu{display: flex; justify-content: space-between; align-items: center; width: 90%; height: 70px; 
     background-color: white; border-radius: 20px; margin: 18.75px 0px 0px 18.75px; 
     box-shadow: 5px 5px 10px 0 lightgrey; cursor: pointer;}
@@ -34,9 +34,9 @@ img{width: 100%; height: 275px; object-fit: cover;}
     margin: 40px 0 0 25%; box-shadow: 5px 5px 10px 0 lightgrey;}
 .text{color: white;}
 .pad_footer{padding: 20px 0px 0px 20px;}
-.pad_h4{padding-bottom: 20px;}
+.pad_h4{padding-bottom: 20px; font-weight: 400;}
 .ustensils{display: flex; margin-left: 0;}
 .hands{display: flex; width: 13px; margin-left: 0;}
-.pad_bot{padding-bottom: 8px;}
+.pad_bot{padding-bottom: 3px;}
 #line{background-color: #99E2D0; width: 40px; height: 3.5px; border: none; margin-left: 20px;
     margin-top: -15px;}
