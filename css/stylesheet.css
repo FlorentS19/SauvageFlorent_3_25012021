@@ -56,7 +56,7 @@ i{background-color: linear-gradient(to bottom, #E972DA 0%, #D06ADB 50%, #A45BDC 
 
 footer{background-color: #353535; color: white; height: 170px;}
 .pad_footer{padding: 20px 0px 0px 20px;}
-.pad_h4{padding-bottom: 20px;}
+.pad_h4{padding-bottom: 20px; font-weight: 400;}
 .ustensils{margin-left: 0;}
 .hands{width: 13px; margin-left: 0;}
 .pad_bot{padding-bottom: 8px;}
