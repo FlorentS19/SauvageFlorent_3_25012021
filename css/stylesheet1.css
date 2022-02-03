@@ -14,14 +14,15 @@ a:visited{color: black}
 h2{padding: 30px 0 0 20px; font-weight: 500;}
 h3{margin: 0;}
 h4{padding-left: 20px; font-weight: 400;}
-p{margin: 0;}
+p{margin: 5px 0 0 0;}
 footer{background-color: #353535; color: white; height: 150px;}
 i{margin: 0 20px 0 20px;}
 img{width: 100%; height: 275px; object-fit: cover;}
 
 .police_title{font-family: 'Shrikhand', cursive;}
-.menu{display: flex; justify-content: space-between; align-items: center; width: 90%; height: 60px; background-color: white;
-    border-radius: 20px; margin: 18.75px 0px 0px 18.75px; box-shadow: 5px 5px 10px 0 lightgrey; cursor: pointer;}
+.menu{display: flex; justify-content: space-between; align-items: center; width: 90%; height: 70px; 
+    background-color: white; border-radius: 20px; margin: 18.75px 0px 0px 18.75px; 
+    box-shadow: 5px 5px 10px 0 lightgrey; cursor: pointer;}
 .menu_text{padding-left: 15px;}
 .no_margin{margin: 0;}
 .return{margin-left: -80px; }
@@ -38,4 +39,3 @@ img{width: 100%; height: 275px; object-fit: cover;}
 .pad_bot{padding-bottom: 8px;}
 #line{background-color: #99E2D0; width: 40px; height: 3.5px; border: none; margin-left: 20px;
     margin-top: -15px;}
-/*balsie <hr>*/
