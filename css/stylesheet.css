@@ -41,7 +41,7 @@ h2{margin-left: 25px;}
     margin-bottom: 25px; display: flex; justify-content: flex-start; margin-left: 40px;
     align-items: center; cursor: pointer; box-shadow: 5px 5px 10px 0 lightgrey}
 .fondgris:hover{background-color: #f5edff;}
-.fondgris:hover #icolorgris {color: #9356DC}
+.fondgris:hover #icolorgris {color: #9356DC;}
 .isize{font-size: 20px;}
 li > p{background-color: #9356DC; border-radius: 15px; width: 25px; height: 25px; color: white; display: flex;
     justify-content: center; align-items: center;     margin-left: -15px;}
