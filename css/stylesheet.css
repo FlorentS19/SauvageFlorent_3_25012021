@@ -1,0 +1,76 @@
+.flexCenter{
+    display: flex;
+    justify-content: center;
+}
+.flexColumn{
+    display: flex;
+    flex-direction: column;
+}
+.flexBetween{
+    display: flex;
+    justify-content: space-between;
+}
+.flex{
+    display: flex;
+}
+
+a:visited{color: black;}
+a:link{text-decoration: none;}
+.textAlign{text-align: center;}
+input{padding-left: 15px;}
+#loca{margin: 0;}
+ol{padding: 0;}
+#icolorgris{color: grey;}
+
+body{font-family: 'Roboto', sans-serif; margin: 0;}
+header{width: 100%;}
+h1, h4{font-family: 'Shrikhand', cursive;}
+h2{margin-left: 25px;}
+.nomargin{margin: 0;}
+.shadowup{box-shadow: 0 0 0.5rem rgb(0 0 0 / 25%); position: relative;}
+.backgroundcolorgrey{background-color: #eaeaea; padding: 18px; font-size: 15px;}
+.searchbar{background-color: transparent; border: none; font-size: 15px; width: 40%;}
+.backgroundcolorwhitegrey{background-color: #f6f6f6;}
+.first_h2{margin: 0; padding: 20px 47px 25px 47px;}
+.nd_h2{padding: 15px 0px 50px 0px;}
+.borderpink{border: 0 solid ; border-radius: 26px; background: linear-gradient(to bottom, #E972DA 0%, #D06ADB 50%, 
+    #A45BDC 100%); height: 50px; width: 215px; display: flex; align-items: center; justify-content: center;
+    margin-left: 33.5px; box-shadow: 5px 5px 10px 0 lightgrey; margin-top: 15px; color: white;}
+.colortext{color: white;}
+.fondgris{background-color: #f6f6f6; border-radius: 15px; width: 290px; height: 60px; 
+    margin-bottom: 25px; display: flex; justify-content: flex-start; margin-left: 40px;
+    align-items: center; cursor: pointer; box-shadow: 5px 5px 10px 0 lightgrey}
+.fondgris:hover{background-color: #f5edff;}
+.fondgris:hover #icolorgris {color: #9356DC}
+.isize{font-size: 20px;}
+li > p{background-color: #9356DC; border-radius: 15px; width: 25px; height: 25px; color: white; display: flex;
+    justify-content: center; align-items: center;     margin-left: -15px;}
+img{width: 100%; height: 185px; object-fit: cover; border-radius: 21px 21px 0 0;}
+.contrestaurant{display: flex; flex-direction: column; width: 90%; background-color: white;
+    border-radius: 20px; margin: 18.75px 0px 0px 18.75px; box-shadow: 5px 5px 10px 0 lightgrey; cursor: pointer;}
+.textrestaurant{margin: 10px 0px 10px 15px;}
+h3, p{margin: 0;}
+#heartretsaurant{margin: 15px 0px 0px 0px; font-size: 25px;}
+i{background-color: linear-gradient(to bottom, #E972DA 0%, #D06ADB 50%, #A45BDC 100%); margin: 0 20px 0 20px;}
+.marginbot{margin-bottom: 20px;}
+
+footer{background-color: #353535; color: white; height: 170px;}
+.padfooter{padding: 20px 0px 0px 20px;}
+.padh4{padding-bottom: 20px;}
+.ustensils{margin-left: 0;}
+.hands{width: 13px; margin-left: 0;}
+.padbot{padding-bottom: 8px;}
+
+/*Case "nouveau" restaurant - Coeur violet*/
+
+@media only screen (min-width: 321px) and (max-width: 799px){
+    /*style smartphones et petites tablettes en portrait*/
+}
+
+@media only screen (min-width: 800px) and (max-width: 966px){
+    /*style petites-moyennes tablettes */
+}
+
+@media only screen (min-width: 967px){
+    /*style ordinateur bureau */
+}
