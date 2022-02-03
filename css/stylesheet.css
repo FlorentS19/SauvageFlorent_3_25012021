@@ -14,6 +14,18 @@
     display: flex;
 }
 
+/**********************************RESET CSS***************************************************
+html, body, div, span, h1, h2, h3, h4, h5, p, a, img, i, ol, ul, li, form, caption, footer,
+header, section{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;}
+**********************************RESET CSS***************************************************/
+
+h1, h2, h3, h4
 a:visited{color: black;}
 a:link{text-decoration: none;}
 .text_align{text-align: center;}
@@ -25,7 +37,7 @@ ol{padding: 0;}
 body{font-family: 'Roboto', sans-serif; margin: 0;}
 header{width: 100%;}
 h1, h4{font-family: 'Shrikhand', cursive;}
-h2{margin-left: 25px;}
+h2{margin-left: 25px; margin-right: 25px;}
 .no_margin{margin: 0;}
 .shadow_up{box-shadow: 0 0 0.5rem rgb(0 0 0 / 25%); position: relative;}
 .background_color_grey{background-color: #eaeaea; padding: 18px; font-size: 15px;}
@@ -53,7 +65,9 @@ h3, p{margin: 0;}
 #heart_retsaurant{margin: 15px 0px 0px 0px; font-size: 25px;}
 i{background-color: linear-gradient(to bottom, #E972DA 0%, #D06ADB 50%, #A45BDC 100%); margin: 0 20px 0 20px;}
 .margin_bot{margin-bottom: 20px;}
-
+.new{display: flex; align-items: center; justify-content: center; background-color: #99E2D0; 
+    color: green; width: 85px; height: 35px; border: none; border-radius: 3px; margin-left: 235px;
+    margin-top: 15px; font-weight: bold}
 footer{background-color: #353535; color: white; height: 170px;}
 .pad_footer{padding: 20px 0px 0px 20px;}
 .pad_h4{padding-bottom: 20px; font-weight: 400;}
