@@ -1,4 +1,4 @@
-.flexCenter{
+.flex_center{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,22 +19,22 @@ footer{background-color: #353535; color: white; height: 150px;}
 i{margin: 0 20px 0 20px;}
 img{width: 100%; height: 275px; object-fit: cover;}
 
-.policetitle{font-family: 'Shrikhand', cursive;}
+.police_title{font-family: 'Shrikhand', cursive;}
 .menu{display: flex; justify-content: space-between; align-items: center; width: 90%; height: 60px; background-color: white;
     border-radius: 20px; margin: 18.75px 0px 0px 18.75px; box-shadow: 5px 5px 10px 0 lightgrey; cursor: pointer;}
-.textmenu{padding-left: 15px;}
-.nomargin{margin: 0;}
+.menu_text{padding-left: 15px;}
+.no_margin{margin: 0;}
 .return{margin-left: -80px; }
-.backgroundcolorwhitegrey{height: 1050px; background-color: #f6f6f6; border-radius: 40px 40px 0 0; 
+.background_color_white_grey{height: 1050px; background-color: #f6f6f6; border-radius: 40px 40px 0 0; 
     position: relative; margin-top: -75px;}
 .commander{border-radius: 26px;  background: linear-gradient(to bottom, #E972DA 0%, #D06ADB 50%, 
     #A45BDC 100%); height: 50px; width: 50%; display: flex; align-items: center; justify-content: center;
     margin: 40px 0 0 25%; box-shadow: 5px 5px 10px 0 lightgrey;}
 .text{color: white;}
-.padfooter{padding: 20px 0px 0px 20px;}
-.padh4{padding-bottom: 20px;}
+.pad_footer{padding: 20px 0px 0px 20px;}
+.pad_h4{padding-bottom: 20px;}
 .ustensils{display: flex; margin-left: 0;}
 .hands{display: flex; width: 13px; margin-left: 0;}
-.padbot{padding-bottom: 8px;}
+.pad_bot{padding-bottom: 8px;}
 
 /*balsie <hr>*/
