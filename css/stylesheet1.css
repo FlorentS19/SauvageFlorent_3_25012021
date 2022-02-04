@@ -7,6 +7,17 @@
     align-items: center;
 }
 
+/**********************************RESET CSS***************************************************
+html, body, div, span, h1, h2, h3, h4, h5, p, a, img, i, ol, ul, li, form, caption, footer,
+header, section{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+**********************************RESET CSS***************************************************/
 
 body{font-family: 'Roboto', sans-serif; margin: 0;}
 {font-family: 'Shrikhand', cursive;}
@@ -23,6 +34,7 @@ img{width: 100%; height: 275px; object-fit: cover;}
 .menu{display: flex; justify-content: space-between; align-items: center; width: 90%; height: 70px; 
     background-color: white; border-radius: 20px; margin: 18.75px 0px 0px 18.75px; 
     box-shadow: 5px 5px 10px 0 lightgrey; cursor: pointer;}
+.menu_info{display: flex; justify-content: space-between; width: 100%;}
 .menu_text{padding-left: 15px;}
 .tarif{margin-top: 30px; padding-right: 20px; font-weight: bold;}
 .no_margin{margin: 0;}
@@ -40,3 +52,9 @@ img{width: 100%; height: 275px; object-fit: cover;}
 .pad_bot{padding-bottom: 3px;}
 #line{background-color: #99E2D0; width: 40px; height: 3.5px; border: none; margin-left: 20px;
     margin-top: -15px;}
+.menu .check{background: #99e2d0; height: auto; width: 0; opacity: 0; border-radius: 0 15px 15px 0; display: flex;
+    align-items: center; justify-content: center; transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, 
+    opacity 0.4s ease-in-out;}
+.menu .check .check_icon{color: white; transform: rotate(360deg); transition: 0.4s ease-in-out;}
+.menu:hover .check{opacity: 100%; width: 50px; height: 100%;}
+.menu:hover .check_icon{transform: rotate(0deg)}
