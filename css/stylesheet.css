@@ -47,7 +47,8 @@ h2{margin-left: 25px; margin-right: 25px;}
 .nd_h2{padding: 15px 0px 50px 0px;}
 .border_pink{border: 0 solid ; border-radius: 26px; background: linear-gradient(to bottom, #E972DA 0%, #D06ADB 50%, 
     #A45BDC 100%); height: 50px; width: 215px; display: flex; align-items: center; justify-content: center;
-    margin-left: 33.5px; box-shadow: 5px 5px 10px 0 lightgrey; margin-top: 15px; color: white;}
+    margin-left: 33.5px; box-shadow: 5px 5px 10px 0 lightgrey; margin-top: 15px; color: white; transform: scale(1);
+    transition: transform 400ms;}
 .color_text{color: white;}
 .fond_gris{background-color: #f6f6f6; border-radius: 15px; width: 290px; height: 60px; 
     margin-bottom: 25px; display: flex; justify-content: flex-start; margin-left: 40px;
@@ -62,12 +63,18 @@ img{width: 100%; height: 185px; object-fit: cover; border-radius: 21px 21px 0 0;
     border-radius: 20px; margin: 18.75px 0px 0px 18.75px; box-shadow: 5px 5px 10px 0 lightgrey; cursor: pointer;}
 .text_restaurant{margin: 10px 0px 10px 15px;}
 h3, p{margin: 0;}
-#heart_retsaurant{margin: 15px 0px 0px 0px; font-size: 25px;}
-i{background-color: linear-gradient(to bottom, #E972DA 0%, #D06ADB 50%, #A45BDC 100%); margin: 0 20px 0 20px;}
+#heart_retsaurant{margin-top: 15px; font-size: 25px;}
+.heart_retsaurant_1{margin-right:-51.3px; opacity: 100%; }
+.heart_retsaurant_1:hover{opacity: 0%; transition: opacity 0.3s ease-in-out;}
+.heart_retsaurant_2{opacity: 0%}
+.heart_retsaurant_2:hover{opacity: 100%; background: linear-gradient(to bottom, rgb(255,121,218) 0%,
+    rgb(147,86,220) 100%); -webkit-background-clip: text;-webkit-text-fill-color: transparent;
+    transition: opacity 0.3s ease-in-out;}
+i{margin: 0 20px 0 20px;}
 .margin_bot{margin-bottom: 20px;}
-.new{display: flex; align-items: center; justify-content: center; background-color: #99E2D0; 
-    color: green; width: 85px; height: 35px; border: none; border-radius: 3px; margin-left: 235px;
-    margin-top: 15px; font-weight: bold}
+.new{display: flex; align-items: center; justify-content: center; position: absolute; 
+    background-color: #99E2D0; color: green; width: 85px; height: 35px; border: none;
+    border-radius: 3px; margin-left: 235px; margin-top: 15px; font-weight: bold}
 footer{background-color: #353535; color: white; height: 170px;}
 .pad_footer{padding: 20px 0px 0px 20px;}
 .pad_h4{padding-bottom: 20px; font-weight: 400;}
@@ -87,4 +94,5 @@ footer{background-color: #353535; color: white; height: 170px;}
 
 @media only screen (min-width: 967px){
     /*style ordinateur bureau */
+    .border_pink:hover{transform: scale(1.15);}
 }
