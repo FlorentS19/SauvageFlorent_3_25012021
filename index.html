@@ -4,6 +4,7 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="reset/reset.css" />
         <link rel="stylesheet" href="css/stylesheet.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +17,7 @@
     <body>        
         <header>
             <div class="shadow_up">
-                <h1 class="flex_center no_margin">ohmyfood</h1>
+                <h1 class="flex_center title">ohmyfood</h1>
             </div>
         </header>
         <div class="flex_center background_color_grey">
@@ -24,12 +25,12 @@
             <input class="search_bar" type="text" placeholder="Paris,Belleville">
         </div>
         <div class="text_align background_color_white_grey first_h2">
-            <h2>Réservez le menu qui vous convient</h2>
+            <h2 class="pad_bot">Réservez le menu qui vous convient</h2>
             <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
             <div class="border_pink color_text">Explorer nos restaurants</div>
         </div>
         <section>
-            <h2>Fonctionnement</h2>
+            <h2 id="space">Fonctionnement</h2>
             <ol class="flex_column flex_row">
                 <li class="fond_gris">
                     <p>1</p>
@@ -49,10 +50,10 @@
             </ol>
         </section>
         <section class="background_color_white_grey nd_h2">
-            <h2>Restaurants</h2>
+            <h2 id="space">Restaurants</h2>
             <div class="flex_wrap">
                 <div class="cont_restaurant">
-                    <div class="new">Nouveau</div>
+                    <span class="new">Nouveau</span>
                     <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg">
                     <div class="flex_between">
                         <div class="text_restaurant">
