@@ -10,6 +10,10 @@
     display: flex;
     justify-content: space-between;
 }
+.flex_wrap{
+    display: flex; 
+    flex-wrap: wrap;
+}
 .flex{
     display: flex;
 }
@@ -20,7 +24,7 @@ h2{font-size: 1.5em; font-weight: bold;}
 h3{font-size: 1.17em; font-weight: bold;}
 h4{font-weight: bold;}
 a:visited{color: black;}
-a:link{text-decoration: none; color: black;}
+a:link{text-decoration: none;}
 .text_align{text-align: center;}
 input{padding-left: 15px;}
 #loca{margin: 0;}
@@ -43,16 +47,16 @@ header{width: 100%;}
 .border_pink:hover{transform: scale(1.15);}
 .color_text{color: white;}
 #space{margin: 15px 0 20px 20px;}
-.fond_gris{background-color: #f6f6f6; border-radius: 15px; width: 80%; height: 60px; 
-    margin: 0 0 20px 35px; display: flex; justify-content: flex-start; align-items: center; cursor: pointer; 
-    box-shadow: 5px 5px 10px 0 lightgrey}
+.fond_gris{background-color: #f6f6f6; border-radius: 15px; width: 90%; height: 60px; 
+    margin-bottom: 20px; display: flex; justify-content: flex-start; align-items: center; cursor: pointer; 
+    box-shadow: 5px 5px 10px 0 lightgrey; position: relative; left: 15px;}
 .fond_gris:hover{background-color: #f5edff;}
 .fond_gris:hover #i_color_gris {color: #9356DC;}
 .i_size{font-size: 20px;}
 li > p{background-color: #9356DC; border-radius: 15px; width: 25px; height: 25px; color: white; display: flex;
-    justify-content: center; align-items: center; margin-left: -15px;}
+    justify-content: center; align-items: center; position: relative; left: -10px;}
 img{width: 100%; height: 185px; object-fit: cover; border-radius: 21px 21px 0 0;}
-.restaurant{display: flex; flex-direction: column; background-color: white;
+.restaurant{display: flex; flex-direction: column; background-color: white; width: 100%;
     border-radius: 20px; margin: 14px; box-shadow: 5px 5px 10px 0 lightgrey; cursor: pointer;}
 .restaurant_info{display: flex;}
 .restaurant_info_text{margin: 10px 0px 10px 15px; width: 100%;}
@@ -66,7 +70,7 @@ img{width: 100%; height: 185px; object-fit: cover; border-radius: 21px 21px 0 0;
 i{margin: 0 20px 0 20px;}
 .margin_bot{margin-bottom: 20px;}
 .new{position: absolute; background-color: #99E2D0; color: green; border-radius: 3px; font-weight: bold;
-    padding: 5px; right: 30px; }
+    padding: 5px; right: 10%; margin-top: 16px;}
 footer{background-color: #353535; color: white; height: 170px;}
 .pad_footer{padding: 20px 0px 0px 20px;}
 .pad_h4{padding-bottom: 20px; font-weight: 400;}
@@ -75,22 +79,25 @@ footer{background-color: #353535; color: white; height: 170px;}
 .pad_bot{padding-bottom: 8px;}
 .mail{color: white;}
 
-@media screen and (max-width: 1224px) and (min-width: 810px){
-    .background_color_grey{font-size: 20px;}
-    .search_bar{width: 17%; font-size: 20px}
-    .first_h2{display: flex; flex-direction: column; align-items: center;}
-    .flex_row{display: flex; flex-direction: row; margin-right: 40px;}
-    .flex_wrap{display: flex; flex-wrap: wrap;}
-    .cont_restaurant{margin-left: 47px; margin-right: 47px; width: 38%;}
-    .new{margin-left: 225px;}
-}
-
 @media screen and (max-width: 809px) and (min-width: 415px){
     .background_color_grey{font-size: 20px;}
     .search_bar{width: 17%; font-size: 20px}
     .first_h2{display: flex; flex-direction: column; align-items: center;}
-    .fond_gris{width: 90%;}
-    .new{margin-left: 225px;}
+    #flex{display: flex; justify-content: center;}
+    .fond_gris{width: 90%; margin-right: 30px;}
+    .flex_row{display: flex; flex-direction: row; flex-wrap: wrap;}
+    .restaurant{width: 100%; margin: 20px;}
+    .new{right: 7%}
 }
 
-/*Regler placement "nouveau" sur les restaurants et terminer l'affichage tablette*/
+@media screen and (max-width: 1224px) and (min-width: 810px){
+    .background_color_grey{font-size: 20px;}
+    .search_bar{width: 17%; font-size: 20px}
+    .first_h2{display: flex; flex-direction: column; align-items: center;}
+    #flex{display: flex; justify-content: center; flex-wrap: unset;}
+    .fond_gris{margin-right: 30px;}
+    .restaurant{width: 46%;}
+    .new{right: 55%;}
+    #new{right: 4%;}
+    .pad_footer{display: flex; flex-direction: column; align-items: center;}
+}
