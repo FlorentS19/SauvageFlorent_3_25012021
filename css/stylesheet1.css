@@ -22,6 +22,7 @@ h3, p{white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}
 .police_title{padding: 7.5px 0 7.5px 0;}
 .return{margin-left: -35px; position: absolute; left: 60px; margin-top: 23px;}
 .title_menu{padding-left: 20px; font-weight: 400; font-family: 'Roboto'}
+.center{display: flex; flex-direction: column; align-items: center;}
 .menu{display: flex; justify-content: space-between; align-items: center; width: 95%; height: 70px; 
     background-color: white; border-radius: 20px; margin-top: 18.75px; 
     box-shadow: 5px 5px 10px 0 lightgrey; cursor: pointer;}
@@ -53,7 +54,6 @@ h3, p{white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}
     #flex_center{display: flex; justify-content: center; flex-direction: column;}
     #return{position: absolute; left: 60px; margin-top: 23px; font-size: larger;}
     .card{justify-content: center;}
-    .center{display: flex; flex-direction: column; align-items: center;}
     .pad_footer{display: flex; flex-direction: column; align-items: center;}
 }
 
