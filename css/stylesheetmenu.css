@@ -5,6 +5,7 @@
 .flex{display: flex;
     align-items: center;
 }
+/*
 @keyframes anim{
      0%{
          transform: translateY(5vh);
@@ -16,25 +17,48 @@
      }
 }
 .card_anim_1{
-    animation-name: anim;
+    animation: anim;
+    animation-duration: 1500ms;
+    animation-delay: 0s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+.card_anim_2{
+    animation: anim;
     animation-duration: 1500ms;
     animation-delay: 200ms;
     animation-timing-function: ease-in-out;
     animation-iteration-count: 1;
 }
-.card_anim_2{
-    animation-name: anim;
+.card_anim_3{
+    animation: anim;
     animation-duration: 1500ms;
     animation-delay: 400ms;
     animation-timing-function: ease-in-out;
     animation-iteration-count: 1;
 }
-.card_anim_3{
-    animation-name: anim;
-    animation-duration: 1500ms;
-    animation-delay: 600ms;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: 1;
+*/
+@keyframes show {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: .5;
+        transform: scale(1.05);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.menu:nth-last-child(1){
+    animation-delay: 1.5s;
+}
+.menu:nth-last-child(2){
+    animation-delay: .75s;
+}
+.menu:nth-last-child(3){
+    animation-delay: 0s;
 }
 
 body{font-family: 'Roboto', sans-serif; margin: 0;}
@@ -64,6 +88,9 @@ h3, p{white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}
     margin-top: 18.75px; 
     box-shadow: 5px 5px 10px 0 lightgrey; 
     cursor: pointer;
+    animation: show .5s ease-in-out;
+    animation-fill-mode: backwards;
+    transition: all .2s ease-in-out;
 }
 .menu_info{display: flex; justify-content: space-between; width: 100%; overflow: hidden;}
 .menu_text{padding-left: 15px; width: 100%; overflow: hidden;}
