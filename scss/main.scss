@@ -1,0 +1,304 @@
+/*Couleurs*/
+$loadercolorprimary: #3a2256;
+$loadercolorsecondary: #833e70;
+$loadercolortertiary: #496c64;
+/****************************/
+$colorprimary: #9356DC;
+$colorsecondary: #FF79DA;
+$colortertiary: #99E2D0;
+/****************************/
+$backgroundcolorsearch: #eaeaea;
+$backgroundcoloracceuil: #f6f6f6;
+$backgroundcolorfonciotnnement: #f5edff;
+$backgroundcolorfooter: #353535;
+/****************************/
+$icolorgris: grey;
+
+/*Flex*/
+.flex_center{display: flex; justify-content: center;}
+.flex_column{display: flex; flex-direction: column;}
+.flex_between{display: flex; justify-content: space-between;}
+.flex_wrap{display: flex; flex-wrap: wrap;}
+.flex{display: flex;}
+
+/*Chargement*/
+
+.loader{
+    position:  fixed;
+    width: 100%;
+    height: 100%;
+    background: #e2fff8c4; ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: slideInFromLeft 2s;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+    &_lettreP{
+        color: $loadercolorprimary;
+        font-size: 70px;
+        letter-spacing: 15px;
+        margin-bottom: 50px;
+        animation: flashP 1.4s linear infinite
+    }
+    &_lettreP:nth-child(1) {animation-delay: 0.1s;}
+    &_lettreP:nth-child(4) {animation-delay: 0.28s;}
+    &_lettreP:nth-child(7) {animation-delay: 0.46s;}
+    &_lettreP:nth-child(10) {animation-delay: 0.64s;}
+    &_lettreS{
+        color: $loadercolorsecondary;
+        font-size: 70px;
+        letter-spacing: 15px;
+        margin-bottom: 90px;
+        animation: flashS 1.4s linear infinite
+    }
+    &_lettreS:nth-child(2) {animation-delay: 0.16s;}
+    &_lettreS:nth-child(5) {animation-delay: 0.34s;}
+    &_lettreS:nth-child(8) {animation-delay: 0.52s;}
+    &_lettreT{
+        color: $loadercolortertiary;
+        font-size: 70px;
+        letter-spacing: 15px;
+        margin-bottom: 70px;
+        animation: flashT 1.4s linear infinite
+    }
+    &_lettreT:nth-child(3) {animation-delay: 0.22s;}
+    &_lettreT:nth-child(6) {animation-delay: 0.40s;}
+    &_lettreT:nth-child(9) {animation-delay: 0.58s;}
+}
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+@keyframes flashP {
+    0% {
+        color: $colorprimary;
+        text-shadow: 0 0 7px $colorprimary;
+    }
+    90% {
+        color: $loadercolorprimary;
+        text-shadow: none;
+    }
+    100% {
+        color: $colorprimary;
+        text-shadow: 0 0 7px $colorprimary;
+    }
+}
+@keyframes flashS {
+    0% {
+        color: $colorsecondary;
+        text-shadow: 0 0 7px $colorsecondary;
+    }
+    90% {
+        color: $loadercolorsecondary;
+        text-shadow: none;
+    }
+    100% {
+        color: $colorsecondary;
+        text-shadow: 0 0 7px $colorsecondary;
+    }
+}
+@keyframes flashT {
+    0% {
+        color: $colortertiary;
+        text-shadow: 0 0 7px $colortertiary;
+    }
+    90% {
+        color: $loadercolortertiary;
+        text-shadow: none;
+    }
+    100% {
+        color: $colortertiary;
+        text-shadow: 0 0 7px $colortertiary;
+    }
+}
+body{font-family: 'Roboto', sans-serif; margin: 0;}
+h1, h4, .loader_lettreP, .loader_lettreS, .loader_lettreT{font-family: 'Shrikhand', cursive;}
+h1{font-size: 2em; font-weight: bold;} 
+h2{font-size: 1.5em; font-weight: bold;}
+h3{font-size: 1.17em; font-weight: bold;}
+h4{font-weight: bold;}
+a:visited{color: black;}
+a:link{text-decoration: none;}
+
+/*Header*/
+header{width: 100%;}
+.shadow_bottom{box-shadow: 0 0 0.5rem #0000003f; position: relative;}
+.title{font-size: 2em; padding: 15px 0 15px 0;}
+
+/*Recherche*/
+input{padding-left: 15px;}
+.search{background-color: $backgroundcolorsearch; padding: 18px; font-size: 15px;
+    &_bar{
+        background-color: transparent; 
+        border: none; 
+        font-size: 15px; 
+        width: 40%; 
+        text-align: center;}
+}
+#loca{margin: 0;}
+
+
+/*Acceuil*/
+.text_align{text-align: center;}
+.acceuil{background-color: $backgroundcoloracceuil;
+    &_btn{
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    height: 50px; 
+    width: 215px;
+    border: 0 solid ; 
+    border-radius: 26px; 
+    background: linear-gradient(to bottom, #E972DA 0%, #D06ADB 50%, 
+    #A45BDC 100%);  
+    margin: 10px auto; 
+    box-shadow: 5px 5px 10px 0 lightgrey; 
+    color: white; 
+    transform: scale(1);
+    transition: transform 400ms;
+        &:hover{transform: scale(1.15);}
+    }
+    &_color_text{color: white;}
+}
+.acceuil_h2{margin: 0; padding: 15px 10px 15px 10px; text-align: center;
+    &_bot{padding-bottom: 8px;}
+}
+
+/*Fontcionnement*/
+ol{padding: 0;}
+#i_color_gris{color: grey;}
+#space{margin: 15px 0 20px 20px;}
+.btn{
+    display: flex; 
+    justify-content: flex-start; 
+    align-items: center;
+    background-color: $backgroundcoloracceuil; 
+    border-radius: 15px; 
+    width: 90%; 
+    height: 60px; 
+    margin-bottom: 20px; 
+    margin-left: 20px; 
+    cursor: pointer; 
+    box-shadow: 5px 5px 10px 0 lightgrey; 
+        &:hover{background-color: $backgroundcolorfonciotnnement;}
+        &:hover #i_color_gris {color: $colorprimary;}
+        &_i_size{font-size: 20px;}
+}
+li > p{
+    background-color: $colorprimary; 
+    border-radius: 15px; 
+    width: 25px; 
+    height: 25px; 
+    color: white; 
+    display: flex;
+    justify-content: center; align-items: center; margin-left: -10px;
+}
+
+/*Restaurant*/
+img{
+    width: 100%; 
+    height: 185px; 
+    object-fit: cover; 
+    border-radius: 21px 21px 0 0;}
+.restaurant{background-color: $backgroundcoloracceuil;
+    &_case{
+        display: flex; 
+        flex-direction: column; 
+        background-color: white; 
+        width: 100%;
+        border-radius: 20px; 
+        margin: 14px; 
+        box-shadow: 5px 5px 10px 0 lightgrey; 
+        cursor: pointer;
+        &_info{
+            display: flex;
+            &_text{
+                margin: 10px 0px 10px 15px; 
+                width: 100%;
+                &_heart_1{margin-right:-51.3px; opacity: 100%; }
+                &_heart_1:hover{opacity: 0%; transition: opacity 0.3s ease-in-out;}
+                &_heart_2{opacity: 0%}
+                &_heart_2:hover{
+                    opacity: 100%; 
+                    background: linear-gradient(to bottom, rgb(255,121,218) 0%,rgb(147,86,220) 100%); 
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    transition: opacity 0.3s ease-in-out;
+                }
+            }
+        }
+    }
+    &_new{
+        position: absolute; 
+        background-color: $colortertiary; 
+        color: green; 
+        border-radius: 3px; 
+        font-weight: bold;
+        padding: 5px; 
+        right: 10%; 
+        margin-top: 16px;
+    }
+}
+.restaurant_h2{padding: 20px 0px 50px 0px;}
+#restaurant_case_info_heart{margin-top: 15px; font-size: 25px;}
+i{margin: 0 20px 0 20px;}
+
+/*Footer*/
+footer{
+    background-color: $backgroundcolorfooter; 
+    color: white; 
+    height: 170px;
+    padding: 20px 0px 0px 20px;
+}
+.footer_space{padding-bottom: 20px; font-weight: 400;
+    &_link{padding-bottom: 8px;
+        &_ustensils{margin-left: 0;}
+        &_hands{width: 13px; margin-left: 0;}
+        &_mail{color: white;}
+    }
+}
+
+
+@media screen and (max-width: 809px) and (min-width: 415px){
+    .search{font-size: 20px;
+        &_bar{
+            width: 35%; 
+            font-size: 17.5px}
+    }
+    .acceuil_h2{display: flex; flex-direction: column; align-items: center;}
+    #flex{display: flex; justify-content: center;}
+    .btn{width: 90%; margin-right: 30px;}
+    .restaurant_case{width: 100%; margin: 20px;}
+    .restaurant_new{right: 7%}
+    .footer{display: flex; flex-direction: column; align-items: center;}
+}
+
+@media screen and (max-width: 2480px) and (min-width: 810px){
+    .search{font-size: 20px;
+        &_bar{
+            width: 17%; 
+            font-size: 20px}
+    }
+    .acceuil_h2{display: flex; flex-direction: column; align-items: center;}
+    #flex{display: flex; justify-content: center; flex-wrap: unset;}
+    .btn{margin-right: 30px;}
+    .restaurant_case{width: 46%;}
+    .restaurant_new{right: 55%;}
+    #new{right: 4%;}
+    .footer{display: flex; flex-direction: column; align-items: center;}
+}
+
+
+/***
+
+-Vérifier si passer de #space a h2 change quelque chose visuellement.
+-Vérifier si passer de #heart a &_text #_heart change quelque chose visuellement.
+
+***/
