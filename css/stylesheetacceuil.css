@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*Couleurs*/
 /****************************/
 /****************************/
@@ -34,7 +33,8 @@
   align-items: center;
   animation: slideInFromLeft 2s;
   animation-delay: 2s;
-  animation-fill-mode: both; }
+  animation-fill-mode: both;
+  z-index: 2; }
   .loader_lettreP {
     color: #3a2256;
     font-size: 70px;
@@ -128,7 +128,8 @@ h1 {
 
 h2 {
   font-size: 1.5em;
-  font-weight: bold; }
+  font-weight: bold;
+  margin: 15px 0 20px 20px; }
 
 h3 {
   font-size: 1.17em;
@@ -211,9 +212,6 @@ ol {
 
 #i_color_gris {
   color: grey; }
-
-#space {
-  margin: 15px 0 20px 20px; }
 
 .btn {
   display: flex;
@@ -374,10 +372,3 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center; } }
-
-/***
-
--Vérifier si passer de #space a h2 change quelque chose visuellement.
--Vérifier si passer de #heart a &_text #_heart change quelque chose visuellement.
-
-***/

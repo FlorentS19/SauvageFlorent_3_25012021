@@ -1,0 +1,17 @@
+{
+  "name": "flo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "compile": "node-sass scss/main.scss css/stylesheetacceuil.css",
+    "watch": "node-sass scss/main.scss css/stylesheetacceuil.css -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^7.0.1",
+    "npm-sass": "^3.0.0"
+  },
+  "keywords": [],
+  "description": ""
+}

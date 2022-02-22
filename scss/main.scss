@@ -121,7 +121,7 @@ $icolorgris: grey;
 body{font-family: 'Roboto', sans-serif; margin: 0;}
 h1, h4, .loader_lettreP, .loader_lettreS, .loader_lettreT{font-family: 'Shrikhand', cursive;}
 h1{font-size: 2em; font-weight: bold;} 
-h2{font-size: 1.5em; font-weight: bold;}
+h2{font-size: 1.5em; font-weight: bold; margin: 15px 0 20px 20px;}
 h3{font-size: 1.17em; font-weight: bold;}
 h4{font-weight: bold;}
 a:visited{color: black;}
@@ -174,7 +174,6 @@ input{padding-left: 15px;}
 /*Fontcionnement*/
 ol{padding: 0;}
 #i_color_gris{color: grey;}
-#space{margin: 15px 0 20px 20px;}
 .btn{
     display: flex; 
     justify-content: flex-start; 
@@ -294,11 +293,3 @@ footer{
     #new{right: 4%;}
     .footer{display: flex; flex-direction: column; align-items: center;}
 }
-
-
-/***
-
--Vérifier si passer de #space a h2 change quelque chose visuellement.
--Vérifier si passer de #heart a &_text #_heart change quelque chose visuellement.
-
-***/
