@@ -5,62 +5,50 @@
 .flex{display: flex;
     align-items: center;
 }
-/*
+
 @keyframes anim{
      0%{
-         transform: translateY(5vh);
+         transform: translateY(25px);
          opacity: 0;
      }
+     50% {
+        opacity: .5;
+    }
      100%{
          transform: translateZ(0px);
          opacity: 1;
      }
 }
-.card_anim_1{
-    animation: anim;
+.card_anim{
     animation-duration: 1500ms;
-    animation-delay: 0s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: 1;
+    animation-delay: 0ms;
+    animation: anim .5s ease-in-out;
+    animation-fill-mode: backwards;
+    transition: all .2s ease-in-out;
 }
-.card_anim_2{
-    animation: anim;
+.card_anim{
     animation-duration: 1500ms;
     animation-delay: 200ms;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: 1;
+    animation: anim .5s ease-in-out;
+    animation-fill-mode: backwards;
+    transition: all .2s ease-in-out;
 }
-.card_anim_3{
-    animation: anim;
+.card_anim{
     animation-duration: 1500ms;
     animation-delay: 400ms;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: 1;
+    animation: anim .5s ease-in-out;
+    animation-fill-mode: backwards;
+    transition: all .2s ease-in-out;
 }
-*/
-@keyframes show {
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: .5;
-        transform: scale(1.05);
-    }
-    100% {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-.menu:nth-last-child(1){
+.card_anim:nth-last-child(1){
     animation-delay: 1.5s;
 }
-.menu:nth-last-child(2){
+.card_anim:nth-last-child(2){
     animation-delay: .75s;
 }
-.menu:nth-last-child(3){
+.card_anim:nth-last-child(3){
     animation-delay: 0s;
 }
-
 body{font-family: 'Roboto', sans-serif; margin: 0;}
 a:visited{color: black}
 a:link{text-decoration: none;}
@@ -88,9 +76,6 @@ h3, p{white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}
     margin-top: 18.75px; 
     box-shadow: 5px 5px 10px 0 lightgrey; 
     cursor: pointer;
-    animation: show .5s ease-in-out;
-    animation-fill-mode: backwards;
-    transition: all .2s ease-in-out;
 }
 .menu_info{display: flex; justify-content: space-between; width: 100%; overflow: hidden;}
 .menu_text{padding-left: 15px; width: 100%; overflow: hidden;}
@@ -109,7 +94,8 @@ h3, p{white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}
     justify-content: center;
     height: 50px; 
     width: 50%; 
-    border-radius: 26px;  
+    border-radius: 26px; 
+    cursor: pointer; 
     background: linear-gradient(to bottom, #E972DA 0%, #D06ADB 50%, 
     #A45BDC 100%); 
     margin: 40px 0 0 25%; 
@@ -142,6 +128,7 @@ h3, p{white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}
 .menu .check .check_icon{color: white; transform: rotate(360deg); transition: 0.4s ease-in-out;}
 .menu:hover .check{opacity: 1; width: 50px; height: 100%;}
 .menu:hover .check_icon{transform: rotate(0deg)}
+.link{color:  white;}
 
 @media screen and (max-width: 809px) and (min-width: 415px){
     #flex_center{display: flex; justify-content: center; flex-direction: column;}
