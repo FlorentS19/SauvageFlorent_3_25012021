@@ -301,23 +301,24 @@ i {
   margin: 0 20px 0 20px; }
 
 /*Footer*/
-footer {
+.footer {
   background-color: #353535;
   color: white;
   height: 170px;
   padding: 20px 0px 0px 20px; }
-
-.footer_space {
-  padding-bottom: 20px;
-  font-weight: 400; }
-  .footer_space_link {
-    padding-bottom: 8px; }
-    .footer_space_link_ustensils {
+  .footer_h4 {
+    padding-bottom: 17px;
+    font-weight: 400; }
+  .footer_space {
+    padding-bottom: 16px; }
+    .footer_space_ustensils {
+      display: flex;
       margin-left: 0; }
-    .footer_space_link_hands {
+    .footer_space_hands {
+      display: flex;
       width: 13px;
       margin-left: 0; }
-    .footer_space_link_mail {
+    .footer_space_mail {
       color: white; }
 
 @media screen and (max-width: 809px) and (min-width: 415px) {
