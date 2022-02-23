@@ -3,8 +3,16 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "compile": "node-sass scss/main.scss css/stylesheetacceuil.css",
-    "watch": "node-sass scss/main.scss css/stylesheetacceuil.css -w"
+    "compile_acceuil": "node-sass scss/acceuil.scss css/stylesheet_acceuil.css",
+    "watch_acceuil": "node-sass scss/acceuil.scss css/stylesheet_acceuil.css -w",
+    "compile_a_la_française": "node-sass scss/a_la_française.scss css/stylesheet_a_la_française.css",
+    "watch_a_la_française": "node-sass scss/a_la_française.scss css/stylesheet_a_la_française.css",
+    "compile_note_enchantée": "node-sass scss/note_enchantée.scss css/stylesheet_note_enchantée.css",
+    "watch_note_enchantée": "node-sass scss/note_enchantée.scss css/stylesheet_note_enchantée.css -w",
+    "compile_délice_des_sens": "node-sass scss/délice_des_sens.scss css/stylesheet_délice_des_sens.css",
+    "watch_délice_des_sens": "node-sass scss/délice_des_sens.scss css/stylesheet_délice_des_sens.css -w",
+    "compile_palette_du_goût": "node-sass scss/palette_du_goût.scss css/stylesheet_palette_du_goût.css",
+    "watch_palette_du_goût": "node-sass scss/palette_du_goût.scss css/stylesheet_palette_du_goût.css -w"
   },
   "author": "",
   "license": "ISC",
@@ -13,5 +21,14 @@
     "npm-sass": "^3.0.0"
   },
   "keywords": [],
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FlorentS19/SauvageFlorent_3_25012021.git"
+  },
+  "bugs": {
+    "url": "https://github.com/FlorentS19/SauvageFlorent_3_25012021/issues"
+  },
+  "homepage": "https://github.com/FlorentS19/SauvageFlorent_3_25012021#readme",
   "description": ""
 }
