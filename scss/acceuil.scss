@@ -24,23 +24,22 @@ $icolorgris: grey;
 /*Chargement*/
 
 .loader{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     position:  fixed;
     width: 100%;
     height: 100%;
     background: #e2fff8c4; ;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     animation: slideInFromLeft 2s;
     animation-delay: 2s;
     animation-fill-mode: both;
     z-index: 2;
     &_lettreP{
         color: $loadercolorprimary;
-        font-size: 70px;
-        letter-spacing: 15px;
         margin-bottom: 50px;
-        animation: flashP 1.4s linear infinite
+        animation: flashP 1.4s linear infinite;
+        font-size: 2em;
     }
     &_lettreP:nth-child(1) {animation-delay: 0.1s;}
     &_lettreP:nth-child(4) {animation-delay: 0.28s;}
@@ -48,20 +47,18 @@ $icolorgris: grey;
     &_lettreP:nth-child(10) {animation-delay: 0.64s;}
     &_lettreS{
         color: $loadercolorsecondary;
-        font-size: 70px;
-        letter-spacing: 15px;
         margin-bottom: 90px;
-        animation: flashS 1.4s linear infinite
+        animation: flashS 1.4s linear infinite;
+        font-size: 2em;
     }
     &_lettreS:nth-child(2) {animation-delay: 0.16s;}
     &_lettreS:nth-child(5) {animation-delay: 0.34s;}
     &_lettreS:nth-child(8) {animation-delay: 0.52s;}
     &_lettreT{
         color: $loadercolortertiary;
-        font-size: 70px;
-        letter-spacing: 15px;
         margin-bottom: 70px;
-        animation: flashT 1.4s linear infinite
+        animation: flashT 1.4s linear infinite;
+        font-size: 2em;
     }
     &_lettreT:nth-child(3) {animation-delay: 0.22s;}
     &_lettreT:nth-child(6) {animation-delay: 0.40s;}
@@ -164,6 +161,7 @@ input{padding-left: 15px;}
     color: white; 
     transform: scale(1);
     transition: transform 400ms;
+    cursor: pointer;
         &:hover{transform: scale(1.15);}
     }
     &_color_text{color: white;}
@@ -174,7 +172,7 @@ input{padding-left: 15px;}
 
 /*Fontcionnement*/
 ol{padding: 0;}
-#i_color_gris{color: grey;}
+.i_color_gris{color: grey;}
 .btn{
     display: flex; 
     justify-content: flex-start; 
@@ -188,7 +186,7 @@ ol{padding: 0;}
     cursor: pointer; 
     box-shadow: 5px 5px 10px 0 lightgrey; 
         &:hover{background-color: $backgroundcolorfonciotnnement;}
-        &:hover #i_color_gris {color: $colorprimary;}
+        &:hover .i_color_gris {color: $colorprimary;}
         &_i_size{font-size: 20px;}
 }
 li > p{
@@ -247,7 +245,7 @@ img{
     }
 }
 .restaurant_h2{padding: 20px 0px 50px 0px;}
-#restaurant_case_info_heart{margin-top: 15px; font-size: 25px;}
+.restaurant_case_info_heart{margin-top: 15px; font-size: 25px;}
 i{margin: 0 20px 0 20px;}
 
 /*Footer*/
@@ -266,6 +264,14 @@ i{margin: 0 20px 0 20px;}
 
 
 @media screen and (max-width: 809px) and (min-width: 415px){
+    .loader{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .loader_lettreP, .loader_lettreS, .loader_lettreT{
+        font-size: 3em;
+        letter-spacing: 5px;
+    }
     .search{font-size: 20px;
         &_bar{
             width: 35%; 
@@ -280,6 +286,14 @@ i{margin: 0 20px 0 20px;}
 }
 
 @media screen and (max-width: 2480px) and (min-width: 810px){
+    .loader{
+        display: flex;
+        justify-content: center;
+    }
+    .loader_lettreP, .loader_lettreS, .loader_lettreT{
+        font-size: 4em;
+        letter-spacing: 20px;
+    }
     .search{font-size: 20px;
         &_bar{
             width: 17%; 
@@ -287,9 +301,9 @@ i{margin: 0 20px 0 20px;}
     }
     .acceuil_h2{display: flex; flex-direction: column; align-items: center;}
     #flex{display: flex; justify-content: center; flex-wrap: unset;}
-    .btn{margin-right: 30px;}
+    .btn{margin-right: 30px; cursor: pointer;}
     .restaurant_case{width: 46%;}
     .restaurant_new{right: 55%;}
-    #new{right: 4%;}
+    #new{right: 2.5%;}
     .footer{display: flex; flex-direction: column; align-items: center;}
 }
