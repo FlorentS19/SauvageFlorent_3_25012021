@@ -3,6 +3,11 @@
 /****************************/
 /****************************/
 /*Flex*/
+.flex_between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
 .flex_center {
   display: flex;
   justify-content: center; }
@@ -37,7 +42,8 @@ a:link {
 
 h2 {
   padding: 30px 0 0 20px;
-  font-weight: 500; }
+  font-weight: 500;
+  margin: 0; }
 
 h3 {
   margin: 0; }
@@ -78,6 +84,25 @@ img {
   border-radius: 40px 40px 0 0;
   position: relative;
   margin-top: -75px; }
+  .fond_section_heart_1 {
+    opacity: 100%;
+    font-size: 20px;
+    position: absolute;
+    right: 20px; }
+  .fond_section_heart_1:hover {
+    opacity: 0%;
+    transition: opacity 0.3s ease-in-out; }
+  .fond_section_heart_2 {
+    opacity: 0%;
+    font-size: 20px;
+    position: absolute;
+    right: 20px; }
+  .fond_section_heart_2:hover {
+    opacity: 100%;
+    background: linear-gradient(to bottom, #ff79da 0%, #9356dc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: opacity 0.3s ease-in-out; }
 
 /*Entrées*/
 .title_menu {
